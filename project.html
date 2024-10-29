@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Ahmad Hamdi</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .lightbox {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        padding-top: 60px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .lightbox-content {
+        display: block;
+        margin: auto;
+        max-width: 90%;
+        max-height: 80vh;
+      }
+
+      .close {
+        position: absolute;
+        top: 20px;
+        right: 35px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      #caption {
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <h3>
+          <b><i>Meccm</i></b>
+        </h3>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profil.html">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Project Section -->
+    <section class="container card bg-dark">
+      <div class="container card-section">
+        <h2 class="text-center mb-4 text-highlight">My Projects Success</h2>
+
+        <div class="row justify-content-center">
+          <!-- Project Card 1 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card custom-card">
+              <img
+                src="img/Screenshot (132).png"
+                class="card-img-top"
+                alt="Cacam Furniture Project"
+              />
+              <div class="card-header bg-info bg-gradient">Project 1</div>
+              <div class="card-body">
+                <h5 class="card-title">Cacam Furniture</h5>
+                <p class="card-text">
+                  Website bertema penjualan online yang dibuat dengan HTML & CSS
+                  untuk memenuhi tugas UAS STI.
+                </p>
+                <a
+                  href="https://meccm.github.io/"
+                  class="btn btn-outline-primary"
+                  >Klik di Sini</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card custom-card">
+              <img
+                src="img/Screenshot (134).png"
+                class="card-img-top"
+                alt="Data Diri Project"
+              />
+              <div class="card-header bg-info bg-gradient">Project 2</div>
+              <div class="card-body">
+                <h5 class="card-title">Data Diri</h5>
+                <p class="card-text">
+                  Website data pribadi yang dibuat dengan HTML & CSS.
+                </p>
+                <div
+                  class="progress text-center"
+                  role="progressbar"
+                  aria-label="Progress Example"
+                  aria-valuenow="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated"
+                    style="width: 85%"
+                  >
+                    On Progress
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card custom-card">
+              <img
+                src="img/Screenshot (133).png"
+                class="card-img-top"
+                alt="Calculator Project"
+              />
+              <div class="card-header bg-info bg-gradient">Project 3</div>
+              <div class="card-body">
+                <h5 class="card-title">Calculator</h5>
+                <p class="card-text">
+                  Website operator sederhana yang dibuat dengan HTML, CSS, &
+                  JavaScript (Buka dengan Laptop/PC).
+                </p>
+                <a
+                  href="https://meccm77.github.io/"
+                  class="btn btn-outline-primary"
+                  >Klik di Sini</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card custom-card">
+              <img
+                src="img/Screenshot (135).png"
+                class="card-img-top"
+                alt="Form Project (Bootstrap)"
+              />
+              <div class="card-header bg-info bg-gradient">Project 4</div>
+              <div class="card-body">
+                <h5 class="card-title">Form</h5>
+                <p class="card-text">
+                  Proyek yang fokus pada visualisasi menggunakan Bootstrap.
+                </p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Pelajari Lebih Lanjut</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 5 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card custom-card">
+              <img
+                src="img/Screenshot (115).png"
+                class="card-img-top"
+                alt="Form Project (HTML & CSS)"
+              />
+              <div class="card-header bg-info bg-gradient">Project 5</div>
+              <div class="card-body">
+                <h5 class="card-title">Form</h5>
+                <p class="card-text">
+                  Proyek yang fokus pada visualisasi menggunakan HTML & CSS.
+                </p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Pelajari Lebih Lanjut</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightboxImage" />
+      <div id="caption"></div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Lightbox JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
